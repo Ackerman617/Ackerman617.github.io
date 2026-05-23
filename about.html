@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="pitch-black">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Ackerman's Journal</title>
+    <meta name="description" content="About Ackerman. Biography, expertise, career timeline, and professional details.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <script>
+        (function() {
+            const savedTheme = localStorage.getItem('blog-theme') || 'pitch-black';
+            document.documentElement.setAttribute('data-theme', savedTheme);
+        })();
+    </script>
+</head>
+<body class="page-about">
+    <div class="grain-overlay"></div>
+
+    <header class="site-header">
+        <div class="header-container">
+            <a href="index.html" class="logo-link">
+                <span class="logo-text">Ackerman</span>
+            </a>
+            <nav class="header-nav">
+                <a href="index.html" class="nav-item">Journal</a>
+                <a href="about.html" class="nav-item active">About</a>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
+                    <span class="toggle-icon"></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content article-layout">
+        <div class="about-header">
+            <h1 class="about-title">About Ackerman</h1>
+            <p class="about-intro">程序员、极简主义追求者与设计美学探索者。</p>
+        </div>
+
+        <section class="about-section">
+            <p class="markdown-body" style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 2rem;">
+                你好，我是 **Ackerman**。我致力于构建高性能、设计优雅且真正有价值的数字产品。在喧嚣而纷繁的现代互联网中，我推崇极简主义哲学，主张“少即是多（Less is more）”，无论是在代码架构的提炼上，还是在用户界面视觉的取舍中。
+            </p>
+            <p class="markdown-body" style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 2rem;">
+                这个博客是我在数字世界里的一片自留地。它没有厚重的开发框架和复杂的脚本依赖，完全由优雅的原生静态网页构成。在这里，我以最纯粹的文字形式，沉淀关于系统工程、前端设计以及生活美学的深入思考。
+            </p>
+        </section>
+
+        <!-- Section: Expertise Grid -->
+        <section class="about-section">
+            <h2 class="about-section-title">Expertise</h2>
+            <div class="grid-expertise">
+                <div class="expertise-card">
+                    <h3>Software Engineering</h3>
+                    <p>专注于编写整洁、可维护、类型安全且高性能的工程代码。深刻理解系统架构设计与性能调优，热衷于用极简的技术方案解决复杂的工程挑战。</p>
+                </div>
+                <div class="expertise-card">
+                    <h3>Digital Aesthetics</h3>
+                    <p>追求极致的视觉与排版美学。坚信优秀的技术必须搭配同样高水准的设计，善于在像素级精度上塑造极具高级感的交互与视觉系统。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Experience Timeline -->
+        <section class="about-section">
+            <h2 class="about-section-title">Timeline</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-period">2024 — PRESENT</div>
+                    <div class="timeline-details">
+                        <h3>Senior Software Engineer / Product Designer</h3>
+                        <h4>Independent Crafting</h4>
+                        <p>致力于独立开发高品质的极简主义应用，重塑日常工具的交互体验。编写高性能原生核心，将极简设计与极致响应速度带给终端用户。</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-period">2021 — 2024</div>
+                    <div class="timeline-details">
+                        <h3>Full Stack Engineer</h3>
+                        <h4>Technology Innovators</h4>
+                        <p>主导多平台分布式高并发应用的前后端设计与交付。提炼团队核心基础库，深入优化系统首屏加载与动画流畅度，确保顶级的用户体验。</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-period">2017 — 2021</div>
+                    <div class="timeline-details">
+                        <h3>B.S. in Computer Science & Technology</h3>
+                        <h4>University Academy</h4>
+                        <p>系统化学习计算机科学理论、数据结构、编译原理及图形学，由此奠定了在底层算法与视觉表现力方面的双向知识体系。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="post-footer" style="margin-top: 4rem;">
+            <a href="index.html" class="back-link">
+                <span class="arrow">←</span> Return to Journal
+            </a>
+        </footer>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <p class="copyright">&copy; 2026 Ackerman. All rights reserved.</p>
+            <p class="powered-by">Built with zero-dependency static pages.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="pitch-black">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World | Ackerman's Journal</title>
+    <meta name="description" content="Welcome to my brand new minimalist personal blog. Powered by zero-dependency static pages, built for ultimate performance and timeless aesthetics.">
+    
+    <!-- Preload critical fonts for speed -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../assets/css/style.css">
+    
+    <!-- Instant inline theme selector (Zero FOUT) -->
+    <script>
+        (function() {
+            const savedTheme = localStorage.getItem('blog-theme') || 'pitch-black';
+            document.documentElement.setAttribute('data-theme', savedTheme);
+        })();
+    </script>
+</head>
+<body class="page-post">
+    <div class="grain-overlay"></div>
+    <div id="progress-bar" class="progress-bar"></div>
+
+    <header class="site-header">
+        <div class="header-container">
+            <a href="../index.html" class="logo-link">
+                <span class="logo-text">Ackerman</span>
+            </a>
+            <nav class="header-nav">
+                <a href="../index.html" class="nav-item">Journal</a>
+                <a href="../about.html" class="nav-item">About</a>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
+                    <span class="toggle-icon"></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content article-layout">
+        <article class="post-article">
+            <header class="post-header">
+                <div class="post-meta">
+                    <time datetime="2026-05-24">May 24, 2026</time>
+                    <span class="meta-divider">•</span>
+                    <span class="reading-time">2 min read</span>
+                    <div class="post-tags-container"><span class="post-tag">Meta</span><span class="post-tag">Design</span></div>
+                </div>
+                <h1 class="post-title">Hello World</h1>
+                <p class="post-description">Welcome to my brand new minimalist personal blog. Powered by zero-dependency static pages, built for ultimate performance and timeless aesthetics.</p>
+            </header>
+            
+            <section class="post-body markdown-body">
+                <p>Welcome to my brand new blog! This space has been fully custom-designed from the ground up to reflect a premium, minimalist aesthetic. It rejects heavy modern frontend frameworks and instead celebrates the sheer speed and absolute control of pure static HTML, CSS, and vanilla JavaScript.</p>
+<h2>Core Design Principles</h2>
+<p>I believe that content should be read, not loaded. To achieve this, this blog adheres to three core directives:</p>
+<ol>
+<li><strong>Obsidian Minimalist Aesthetics</strong>: A dark, tactile reading environment utilizing deep pitch-black (<code>#050505</code>) backdrops, ultra-thin elegant borders, and soft silver typography.</li>
+<li><strong>Editorial Typography</strong>: Pairing the luxury serif typeface <strong>Cormorant Garamond</strong> for titles with the ultra-clean geometric sans-serif <strong>Inter</strong> for long-form reading comfort.</li>
+<li><strong>Zero Third-Party Dependencies</strong>: No external npm packages. Every element, from the markdown compiler to the theme engine, runs on raw, native APIs.</li>
+</ol>
+<hr />
+<h2>Technical Specifications</h2>
+<p>The compilation pipeline is powered by a custom Node.js engine (<code>build.js</code>). Here is a quick demonstration of our zero-dependency markdown syntax:</p>
+<h3>1. Code Highlight Test</h3>
+<p>Below is an example of a simple function in Javascript:</p>
+<pre><code class="language-javascript"><span class="token comment">// A simple word count estimator</span>
+<span class="token keyword">function</span> <span class="token function">estimateReadingTime</span>(text) {
+  <span class="token keyword">const</span> wordsPerMinute = <span class="token number">200</span>;
+  <span class="token keyword">const</span> words = text.<span class="token function">trim</span>().<span class="token function">split</span>(/\s+/).length;
+  <span class="token keyword">return</span> Math.<span class="token function">ceil</span>(words / wordsPerMinute);
+}</code></pre>
+<h3>2. Formatted Quotations</h3>
+<p>High-fashion typography requires high-fashion quotes:</p>
+<blockquote>
+<p>&quot;Simplicity is the ultimate sophistication.&quot; — Leonardo da Vinci</p>
+
+</blockquote>
+<h3>3. Styled Inline Components</h3>
+<p>Text formatting includes <strong>bold text</strong>, <em>italic emphasis</em>, and standard <code>inline code wrappers</code> for technical terms.</p>
+<hr />
+<h2>Writing &amp; Publishing New Posts</h2>
+<p>Publishing a new article is incredibly streamlined. There are no dev servers to maintain or heavy builders to wait for:</p>
+<ol>
+<li><strong>Create</strong> a raw Markdown file in the <code>posts_source/</code> directory (e.g., <code>posts_source/my-creative-thoughts.md</code>).</li>
+<li><strong>Define</strong> standard YAML front-matter at the top of the file:</li>
+</ol>
+<pre><code class="language-yaml"><span class="token key">   ---
+   title</span>: <span class="token value">My Creative Thoughts</span>
+<span class="token key">   date</span>: <span class="token value">2026-05-24</span>
+<span class="token key">   description</span>: <span class="token value">An insightful exploration of design and coding.</span>
+<span class="token key">   tags</span>: <span class="token value">[Thoughts, Design]</span>
+   ---</code></pre>
+<ol>
+<li><strong>Run</strong> the compiler script from your workspace directory:</li>
+</ol>
+<pre><code class="language-bash">   <span class="token command">node</span> build.js</code></pre>
+<ol>
+<li><strong>Deploy</strong> by pushing the updated repository directly to GitHub!</li>
+</ol>
+<p>Enjoy reading in this refined, distraction-free atmosphere.</p>
+
+            </section>
+
+            <footer class="post-footer">
+                <a href="../index.html" class="back-link">
+                    <span class="arrow">←</span> Return to Journal
+                </a>
+            </footer>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <p class="copyright">&copy; 2026 Ackerman. All rights reserved.</p>
+            <p class="powered-by">Built with zero-dependency static pages.</p>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

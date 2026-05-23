@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="pitch-black">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ackerman | Personal Journal & Creative Thoughts</title>
+    <meta name="description" content="Personal blog of Ackerman. Reflections on minimalist design, coding, editorial aesthetics and creative writing.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <script>
+        (function() {
+            const savedTheme = localStorage.getItem('blog-theme') || 'pitch-black';
+            document.documentElement.setAttribute('data-theme', savedTheme);
+        })();
+    </script>
+</head>
+<body class="page-home">
+    <div class="grain-overlay"></div>
+
+    <header class="site-header">
+        <div class="header-container">
+            <a href="index.html" class="logo-link">
+                <span class="logo-text">Ackerman</span>
+            </a>
+            <nav class="header-nav">
+                <a href="index.html" class="nav-item active">Journal</a>
+                <a href="about.html" class="nav-item">About</a>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
+                    <span class="toggle-icon"></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content home-layout">
+        <!-- Left Column: Biography & Profiles -->
+        <section class="left-column">
+            <div class="bio-sticky">
+                <div class="avatar-container">
+                    <div class="avatar-fallback">A</div>
+                </div>
+                <h1 class="bio-name">Ackerman</h1>
+                <p class="bio-role">Developer & Minimalist</p>
+                <p class="bio-description">
+                    探索技术深处，追求设计之美。这里记录了我对程序设计、极简主义以及数字美学的思考与沉淀。
+                </p>
+                <div class="bio-links">
+                    <a href="https://github.com/Ackerman617" target="_blank" rel="noopener noreferrer" class="bio-link-item">
+                        <span class="link-icon">↗</span> GitHub
+                    </a>
+                    <a href="mailto:ackerman.development@gmail.com" class="bio-link-item">
+                        <span class="link-icon">↗</span> Email
+                    </a>
+                    <a href="about.html" class="bio-link-item">
+                        <span class="link-icon">↗</span> More About Me
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Right Column: Chronological Articles -->
+        <section class="right-column">
+            <section class="year-section">
+      <h2 class="year-title">2026</h2>
+      <div class="year-posts">
+        <article class="post-card">
+          <div class="card-meta">
+            <time datetime="2026-05-24">May 24, 2026</time>
+            <span class="meta-divider">•</span>
+            <span class="reading-time">2 min read</span>
+          </div>
+          <h3 class="card-title">
+            <a href="posts/hello-world.html" class="card-link">Hello World</a>
+          </h3>
+          <p class="card-description">Welcome to my brand new minimalist personal blog. Powered by zero-dependency static pages, built for ultimate performance and timeless aesthetics.</p>
+          <div class="card-tags"><span class="post-tag">Meta</span><span class="post-tag">Design</span></div>
+        </article></div></section>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <p class="copyright">&copy; 2026 Ackerman. All rights reserved.</p>
+            <p class="powered-by">Built with zero-dependency static pages.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
